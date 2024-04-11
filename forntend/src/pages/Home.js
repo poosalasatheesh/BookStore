@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('https://book-store-backend-pi.vercel.app/books')
+      .get('https://book-store-backend-wheat.vercel.app/books')
       .then((res) => {
         setBooks(res.data);
         setLoading(false);

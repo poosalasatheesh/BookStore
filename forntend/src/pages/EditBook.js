@@ -18,7 +18,7 @@ function EditBook() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://book-store-backend-pi.vercel.app/books/${bookId}`)
+      .get(`https://book-store-backend-wheat.vercel.app/books/${bookId}`)
       .then((res) => {
         setTitle(res.data.title);
         setAuthor(res.data.author);
@@ -39,7 +39,7 @@ function EditBook() {
     };
     setLoading(true);
     axios
-      .put(`https://book-store-backend-pi.vercel.app/books/${bookId}`, data)
+      .put(`https://book-store-backend-wheat.vercel.app/books/${bookId}`, data)
       .then((res) => {
         setLoading(false);
         enqueueSnackbar('Book Edited succesfully', { variant: 'success' });

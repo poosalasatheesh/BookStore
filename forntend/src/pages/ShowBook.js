@@ -13,7 +13,7 @@ function ShowBook() {
     setLoading(true);
     console.log(id);
     const bookID = id.trim();
-    let URL = `https://book-store-backend-pi.vercel.app/books/${bookID}`;
+    let URL = `https://book-store-backend-wheat.vercel.app/books/${bookID}`;
     axios
       .get(URL)
       .then((res) => {

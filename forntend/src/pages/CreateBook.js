@@ -21,7 +21,7 @@ function CreateBook() {
     };
     setLoading(true);
     axios
-      .post('https://book-store-backend-pi.vercel.app/books', data)
+      .post('https://book-store-backend-wheat.vercel.app/books', data)
       .then((res) => {
         setLoading(false);
         enqueueSnackbar('Book is created succesfully', { variant: 'success' });

@@ -16,7 +16,7 @@ function DeleteBook() {
     console.log(id);
     const bookID = id.trim();
     axios
-      .delete(`https://book-store-backend-pi.vercel.app/books/${bookID}`)
+      .delete(`https://book-store-backend-wheat.vercel.app/books/${bookID}`)
       .then((res) => {
         console.log(res);
         enqueueSnackbar('Book Deleted Succesfully', { variant: 'success' });
