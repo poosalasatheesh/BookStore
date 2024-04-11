@@ -16,7 +16,7 @@ function DeleteBook() {
     console.log(id);
     const bookID = id.trim();
     axios
-      .delete(`http://localhost:5010/books/${bookID}`)
+      .delete(`https://book-store-backend-alpha.vercel.app/books/${bookID}`)
       .then((res) => {
         console.log(res);
         enqueueSnackbar('Book Deleted Succesfully', { variant: 'success' });
@@ -37,7 +37,10 @@ function DeleteBook() {
       <div className='py-5 border border-3 w-50 border-warning'>
         <div className='d-flex justify-content-center flex-column'>
           <p className='text-center fs-5'>Are you sure to delete ?</p>
-          <button className='btn btn-danger w-25 m-auto' onClick={handleDeleteBook}>
+          <button
+            className='btn btn-danger w-25 m-auto'
+            onClick={handleDeleteBook}
+          >
             Delete
           </button>
         </div>
