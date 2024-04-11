@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('https://book-store-backend-alpha.vercel.app/books')
+      .get('http://localhost:5010/books')
       .then((res) => {
         setBooks(res.data);
         setLoading(false);
