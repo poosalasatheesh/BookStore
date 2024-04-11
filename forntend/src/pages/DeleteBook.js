@@ -9,7 +9,7 @@ function DeleteBook() {
   var [loading, setLoading] = useState(false);
   var navigate = useNavigate();
   var { id } = useParams();
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   var handleDeleteBook = () => {
     setLoading(true);

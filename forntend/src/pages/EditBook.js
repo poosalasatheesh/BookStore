@@ -13,7 +13,7 @@ function EditBook() {
   var navigate = useNavigate();
   var { id } = useParams();
   var bookId = id.trim();
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   useEffect(() => {
     setLoading(true);

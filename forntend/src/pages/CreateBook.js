@@ -11,7 +11,7 @@ function CreateBook() {
   var [publishYear, setPublishYear] = useState('');
   var [loading, setLoading] = useState(false);
   var navigate = useNavigate();
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   var handleBookSave = () => {
     var data = {
