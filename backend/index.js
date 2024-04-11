@@ -9,8 +9,8 @@ import cors from 'cors';
 
 //Server creation
 var app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 app.use('/books', router);
 //server run in port
 app.listen(PORT, () => {
